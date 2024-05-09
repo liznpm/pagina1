@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+   
+        <NavbarComponent />
+    <HomeComponent />
+   
+
+    <RegistroComponent />  
+      <RegistradoComponent />
+
+    <FooterComponent />
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeComponent from './components/Home.vue'; // Asegúrate de tener la extensión .vue aquí
+import RegistroComponent from './components/Registro.vue'; // Asegúrate de tener la extensión .vue aquí
+import NavbarComponent from './components/Navbar.vue'; // Asegúrate de tener la extensión .vue aquí
+import RegistradoComponent from './components/Registrado.vue'; // Asegúrate de tener la extensión .vue aquí
+
+import FooterComponent from './components/Footer.vue'; // Asegúrate de tener la extensión .vue aquí
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeComponent,
+    RegistroComponent,
+    NavbarComponent,
+    RegistradoComponent,
+    FooterComponent
+        
+
+    
+    
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
